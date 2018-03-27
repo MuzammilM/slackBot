@@ -1,5 +1,6 @@
 #Author : MuzammilM
-#Comments script passed as an argument from crontab
+#Enables a command line utility to send messages to a slack channel
+
 COLOR='\033[0;31m'
 reset=`tput sgr0`
 
