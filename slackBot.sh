@@ -10,13 +10,12 @@ if [ ! -f "/home/"$USER"/config/shellscript/.slackcfg" ]; then
 fi
 
 display_help() {
-    echo "Usage: $0 [option...] | channelname message " >&2
+    echo "Usage: $0 [option...] | [channelname] [message] " >&2
     echo
     echo "   -c, --configure         Requests slack web hook url"
     echo "   -h, --help              Prints this help message"
     exit 1
 }
-
 
 while :
 do
@@ -43,11 +42,6 @@ do
           ;;
     esac
 done
-
-
-
-
-
 
 if [ "$ARG_C" -eq "1" ]; then
         read -p "Please enter slack web hook url: " configure
